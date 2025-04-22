@@ -14,3 +14,10 @@ class ProductProperties {
     }
 
 }
+
+class PerishableProductsProperties extends ProductProperties {
+    constructor(name, price, quantity, expDate) { // Constructor
+        super(name, price, quantity); // Call parent constructor
+        this.expDate = expDate; // New Property
+    }
+}
