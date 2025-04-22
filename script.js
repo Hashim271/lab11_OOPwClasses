@@ -35,7 +35,7 @@ class PerishableProductsProperties extends ProductProperties {
 
 class Store {
     constructor() { // Constructor
-        this.inventory;
+        this.inventory = [];
     }
 
     addProduct(product) { // addProduct()
