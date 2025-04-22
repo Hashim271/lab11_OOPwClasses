@@ -113,7 +113,7 @@ const searchName = "Bread";
 const foundProd = store.findProductByName(searchName);
 
 if (foundProd) {
-    console.log(`Details for: ${searchName}, => ${foundProd.toString()}`);
+    console.log(`Details for: ${searchName} => ${foundProd.toString()}`);
 } else {
     console.log(`Product: ${searchName} || NOT FOUND!`);
 }
