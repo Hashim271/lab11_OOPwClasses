@@ -88,3 +88,12 @@ const yogurt = new PerishableProductsProperties("Yogurt", 5.99, 8, "2025-04-28")
 const television = new ProductProperties("Television", 325.99, 1,); 
 const phone = new ProductProperties("Phone", 899.99, 1);
 const bread = new PerishableProductsProperties("Bread", 3.50, 3, "2025-04-29");
+
+// Add products to Store object
+const store = new Store();
+
+store.addProduct(milk);
+store.addProduct(yogurt);
+store.addProduct(television);
+store.addProduct(phone);
+store.addProduct(bread);
