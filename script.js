@@ -13,7 +13,7 @@ class ProductProperties {
         return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}`;
     }
 
-    static appplyDiscount(products, discount) { // Static applyDiscount
+    static applyDiscount(products, discount) { // Static applyDiscount
         products.forEach(product => {
             product.price = product.price * (1 - discount); // Reduce by discount percentage
         });
@@ -39,6 +39,11 @@ const yogurt = new PerishableProductsProperties("Yogurt", 5.99, 8, "2025-04-28")
 const television = new ProductProperties("Television", 325.99, 1,); // New instance after Static Method
 
 const cart = [milk, yogurt, television]; // cart array
+
+ProductProperties.applyDiscount(cart, 0.1); // DIscount
+
+console.log("Price after 10% Discount: ");
+cart.forEach(p => console.log(p.toString())); // String after discount
 
 //console.log(milk.toString());
 //console.log(yogurt.toString());
