@@ -9,7 +9,7 @@ class ProductProperties {
         return this.price * this.quantity;
     }
 
-    toString() { // toDtring to return a string representation of product
+    toString() { // toString to return a string representation of product
         return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}`;
     }
 
@@ -20,4 +20,9 @@ class PerishableProductsProperties extends ProductProperties {
         super(name, price, quantity); // Call parent constructor
         this.expDate = expDate; // New Property
     }
+
+    toString() { // toString updated with EXP Date
+        return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}, Expiration Date: ${this.expDate}`;
+    }
+
 }
