@@ -85,7 +85,7 @@ cart.forEach(p => console.log(p.toString())); // String after discount
 // Create 5 products
 const milk = new PerishableProductsProperties("Milk", 8.99, 2, "2025-04-22");
 const yogurt = new PerishableProductsProperties("Yogurt", 5.99, 8, "2025-04-28");
-const television = new ProductProperties("Television", 325.99, 1,); 
+const television = new ProductProperties("Television", 325.99, 1,);
 const phone = new ProductProperties("Phone", 899.99, 1);
 const bread = new PerishableProductsProperties("Bread", 3.50, 3, "2025-04-29");
 
@@ -115,5 +115,5 @@ const foundProd = store.findProductByName(searchName);
 if (foundProd) {
     console.log(`Details for: ${searchName}, => ${foundProd.toString()}`);
 } else {
-    console.log (`Product: ${searchName} || NOT FOUND!`);
+    console.log(`Product: ${searchName} || NOT FOUND!`);
 }
