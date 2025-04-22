@@ -36,6 +36,9 @@ class PerishableProductsProperties extends ProductProperties {
 // Two instances of this class with sample data
 const milk = new PerishableProductsProperties("Milk", 8.99, 2, "2025-04-22");
 const yogurt = new PerishableProductsProperties("Yogurt", 5.99, 8, "2025-04-28");
+const television = new ProductProperties("Television", 325.99, 1,); // New instance after Static Method
 
-console.log(milk.toString());
-console.log(yogurt.toString());
+const cart = [milk, yogurt, television]; // cart array
+
+//console.log(milk.toString());
+//console.log(yogurt.toString());
