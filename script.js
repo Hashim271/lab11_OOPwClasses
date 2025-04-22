@@ -37,6 +37,11 @@ class Store {
     constructor() { // Constructor
         this.inventory;
     }
+
+    addProduct(product) { // addProduct()
+        this.inventory.push(product);
+    }
+    
 }
 
 // Two instances of this class with sample data
