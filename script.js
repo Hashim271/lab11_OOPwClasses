@@ -33,6 +33,12 @@ class PerishableProductsProperties extends ProductProperties {
 
 }
 
+class Store {
+    constructor() { // Constructor
+        this.inventory;
+    }
+}
+
 // Two instances of this class with sample data
 const milk = new PerishableProductsProperties("Milk", 8.99, 2, "2025-04-22");
 const yogurt = new PerishableProductsProperties("Yogurt", 5.99, 8, "2025-04-28");
