@@ -97,3 +97,6 @@ store.addProduct(yogurt);
 store.addProduct(television);
 store.addProduct(phone);
 store.addProduct(bread);
+
+// Print total inventory value before discount
+console.log("Total inventory value before the discount: $" + store.getInventoryValue().toFixed(2));
