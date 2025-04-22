@@ -49,7 +49,16 @@ class Store {
         }
         return total;
     }
-    
+
+    findProductByName(name) { // findProducByName
+        for (const product of this.inventory) {
+            if (product.name.toLowerCase() === name.toLowerCase()) { // find product
+                return product; // return product
+            }
+        }
+        return null; // null return
+    }
+
 }
 
 // Two instances of this class with sample data
