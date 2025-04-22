@@ -9,4 +9,8 @@ class ProductProperties {
         return this.price * this.quantity;
     }
 
+    toString() { // toDtring to return a string representation of product
+        return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}`;
+    }
+
 }
