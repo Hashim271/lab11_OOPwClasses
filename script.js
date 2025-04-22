@@ -61,6 +61,8 @@ class Store {
 
 }
 
+/* BEFORE PART 5:
+
 // Two instances of this class with sample data
 const milk = new PerishableProductsProperties("Milk", 8.99, 2, "2025-04-22");
 const yogurt = new PerishableProductsProperties("Yogurt", 5.99, 8, "2025-04-28");
@@ -68,10 +70,21 @@ const television = new ProductProperties("Television", 325.99, 1,); // New insta
 
 const cart = [milk, yogurt, television]; // cart array
 
-ProductProperties.applyDiscount(cart, 0.1); // DIscount
+ProductProperties.applyDiscount(cart, 0.1); // Discount
 
 console.log("Price after 10% Discount: ");
 cart.forEach(p => console.log(p.toString())); // String after discount
 
 //console.log(milk.toString());
 //console.log(yogurt.toString());
+
+*/
+
+// Part 5
+
+// Create 5 products
+const milk = new PerishableProductsProperties("Milk", 8.99, 2, "2025-04-22");
+const yogurt = new PerishableProductsProperties("Yogurt", 5.99, 8, "2025-04-28");
+const television = new ProductProperties("Television", 325.99, 1,); 
+const phone = new ProductProperties("Phone", 899.99, 1);
+const bread = new PerishableProductsProperties("Bread", 3.50, 3, "2025-04-29");
