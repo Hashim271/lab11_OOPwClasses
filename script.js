@@ -13,6 +13,12 @@ class ProductProperties {
         return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}`;
     }
 
+    static appplyDiscount(products, discount) { // Static applyDiscount
+        products.forEach(product => {
+            product.price = product.price * (1 - discount); // Reduce by discount percentage
+        });
+    }
+
 }
 
 class PerishableProductsProperties extends ProductProperties {
